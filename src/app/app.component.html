@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+
+      <button type="btn btn-primary"
+      (click) = "onDisplayDetails()">Display Details</button>
+      <p *ngIf="dataVisible">Hey There</p>
+      <div *ngFor = "let buttonNo of buttons"
+      [ngStyle] = "{backgroundColor: buttonNo>=5? 'blue': 'transparent'}">{{ buttonNo }}
+
+      </div>
+    </div>
+  </div>
+</div>
